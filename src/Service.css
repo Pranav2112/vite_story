@@ -1,3 +1,5 @@
+
+
 *{
   margin: 0;
   padding: 0;
@@ -68,15 +70,18 @@
   font-size: 2.5em;
   z-index:2;
   color:#333;
-  transition: 0.5s;
+  transition: 1s ease;
 } 
 
 .container1 .box p{
+  border: 2px solid black;
+  font-family: Calistoga;
   position: relative;
-  font-size: 1.5em;
+  font-size: 22px;
   z-index:2;
   color:#555;
-  transition: 0.5s;
+  transition: 1s ease;
+  padding: 2%;
 } 
 
 .container1 .box button{
@@ -110,8 +115,13 @@
     font-size: 1.8rem;
   }
 
-.container1 .box:hover h3,
+
+.container1 .box:hover h3{
+    color: #fff;
+}
 .container1 .box:hover p{
+  border: 2px solid white;
+  padding: 2%;
   color: #fff;
 
 }
