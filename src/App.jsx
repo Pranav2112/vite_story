@@ -1,11 +1,13 @@
 import About from "./About";
-import Contact from "./Contact";
+import Contact from "./components/Contact/Contact";
 import Home from "./Home";
-import Services from "./Services";
+import Services from "./components/Services/Services";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "styled-components";
+import Error from "./Error";
+import GoToTop from "./components/GoToTop";
 
 
 const App = () => {
@@ -33,7 +35,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       
-      
+      <GoToTop />
       <BrowserRouter>
         <Header />
         <Routes>

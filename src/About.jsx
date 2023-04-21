@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./styles/Button";
 import "./HeroSection.css";
+import Faq from "./components/FAQ/Faq";
 
 const About = () => {
   return (
+    <>
     <Wrapper>
       <div className="container grid grid-two-column">
         {/* for image  */}
@@ -37,7 +39,34 @@ const About = () => {
           </div>
         </div>
       </div>
+
+
+      <Wrapper>
+      <div className="container grid grid-two-column">
+        <div className="section-hero-data">
+          <p className="hero-top-data">Why Choose Us </p>
+          <h1 className="hero-heading"> Welcome to Stock Story Academy</h1>
+          <p className="hero-para">
+          Booming Bulls is an initiative for the young generation interested in making more, willing to step forward and be free from financial situations. We provide knowledge based on self-learning, experience, and theoretical implications on the market.
+
+In general, trading is considered a business not suitable for everyone, but this is just a hoax which we clear by letting you learn about the strategies that can provide a good profit.
+          </p>
+          <Button className="btn hireme-btn">
+            <NavLink to="/contact">Know More</NavLink>
+          </Button>
+        </div>
+
+        {/* for image  */}
+        <div className="section-hero-image">
+          <picture>
+            <img src="./images/hero.svg" alt="hero image" className="hero-img " />
+          </picture>
+        </div>
+      </div>
     </Wrapper>
+    </Wrapper>
+    <Faq/>
+    </>
   );
 };
 
